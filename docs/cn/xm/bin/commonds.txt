@@ -1,0 +1,44 @@
+
+设置IP
+setenv serverip 192.168.3.47
+setenv ipaddr 192.168.3.147
+setenv netmask 255.255.254.0
+setenv gatewayip 192.168.3.1
+ping 192.168.3.47
+
+
+测试
+sf probe 0;sf lock 0;
+sf probe 0;mw.b 82000000 ff 0x100000;tftp 0x82000000 u-boot-hi3520d.bin;
+go 82000000
+
+烧写u-boot
+sf probe 0;sf lock 0;
+sf probe 0;mw.b 82000000 ff 0x100000;tftp 0x82000000 u-boot-hi3520d.bin;
+sf probe 0;sf erase 0 0x100000;sf write 0x82000000 0 0x100000;
+
+
+设置启动参数
+setenv bootargs 'mem=64M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)'
+setenv bootcmd 'sf probe 0;sf read 0x82000000 0x100000 0x400000;bootm 0x82000000'
+sa
+
+
+烧写内核
+sf probe 0;mw.b 82000000 ff 0x400000;tftp 0x82000000 uImage;sf probe 0;sf erase 0x100000 0x400000;sf write 0x82000000 0x100000 0x400000;
+
+
+烧写文件系统
+sf probe 0;mw.b 82000000 ff 0xB00000;tftp 0x82000000 rootfs.jffs2;sf probe 0;sf erase 0x500000 0xB00000;sf write 0x82000000 0x500000 0xB00000;
+
+
+重启
+re
+
+
+ifconfig eth0 up
+ifconfig lo up
+ifconfig eth0 192.168.3.147
+
+
+mount -t nfs -o nolock 192.168.3.250:/home/lsl/share/nfs /mnt/nfs
