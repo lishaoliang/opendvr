@@ -15,8 +15,8 @@ open DVR/NVR
 
 # 开发环境
 
-## [雄迈巨峰7004T-LM-V3](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/7004T-LM-V3.md)
-* [Hi3520Dv200](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/Hi3520Dv200.md)
+## [硬件：雄迈巨峰7004T-LM-V3](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/7004T-LM-V3.md)
+* [软件：Hi3520Dv200](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/Hi3520Dv200.md)
 * [编译好的环境](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/bin)
 * [实例log](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/bin/serial.log)
 
