@@ -1,4 +1,4 @@
-﻿U-Boot 2010.06 (Jul 13 2019 - 09:10:52)
+﻿U-Boot 2010.06 (Aug 03 2019 - 11:01:00)
 
 Check spi flash controller v350... Found
 Spi(cs1) ID: 0xC8 0x40 0x18 0xC8 0x40 0x18
@@ -6,13 +6,24 @@ Spi(cs1): Block:64KB Chip:16MB Name:"GD25Q128"
 In:    serial
 Out:   serial
 Err:   serial
+USB:   scanning bus for devices... 2 USB Device(s) found
+usb_stor_get_info->1422,blksz:512
+1 Storage Device(s) found
+Interface:  USB
+  Device 0: Vendor: JetFlash Rev: 1100 Prod: Transcend 16GB
+            Type: Removable Hard Disk
+            Capacity: 15480.0 MB = 15.1 GB (31703040 x 512)
+Partition 1: Filesystem: FAT32 "NO NAME    "
+reading u-boot.hi3520dv200
+reading kernel.hi3520dv200
+reading rootfs.hi3520dv200
 Hit any key to stop autoboot:  0
 16384 KiB hi_sfc at 0:0 is now current device
 
 ## Booting kernel from Legacy Image at 82000000 ...
    Image Name:   Linux-3.0.83.2.0
    Image Type:   ARM Linux Kernel Image (uncompressed)
-   Data Size:    3195988 Bytes = 3 MiB
+   Data Size:    3195984 Bytes = 3 MiB
    Load Address: 80008000
    Entry Point:  80008000
    Loading Kernel Image ... OK
@@ -21,24 +32,24 @@ OK
 Starting kernel ...
 
 Uncompressing Linux... done, booting the kernel.
-Linux version 3.0.83.2.0 (lsl@lsl-pc) (gcc version 4.4.1 (Hisilicon_v100(gcc4.4-290+uclibc_0.9.32.1+eabi+linuxpthread)) ) #2 Mon Jul 15 23:13:38 CST 2019
+Linux version 3.0.83.2.0 (lsl@lsl-pc) (gcc version 4.4.1 (Hisilicon_v100(gcc4.4-290+uclibc_0.9.32.1+eabi+linuxpthread)) ) #3 Sat Aug 3 10:18:30 CST 2019
 CPU: ARMv7 Processor [414fc091] revision 1 (ARMv7), cr=10c53c7f
 CPU: VIPT nonaliasing data cache, VIPT aliasing instruction cache
 Machine: hi3520d
 Memory policy: ECC disabled, Data cache writeback
-Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 32512
-Kernel command line: mem=128M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)
-PID hash table entries: 512 (order: -1, 2048 bytes)
-Dentry cache hash table entries: 16384 (order: 4, 65536 bytes)
-Inode-cache hash table entries: 8192 (order: 3, 32768 bytes)
-Memory: 128MB = 128MB total
-Memory: 123624k/123624k available, 7448k reserved, 0K highmem
+Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 16256
+Kernel command line: mem=64M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)
+PID hash table entries: 256 (order: -2, 1024 bytes)
+Dentry cache hash table entries: 8192 (order: 3, 32768 bytes)
+Inode-cache hash table entries: 4096 (order: 2, 16384 bytes)
+Memory: 64MB = 64MB total
+Memory: 58648k/58648k available, 6888k reserved, 0K highmem
 Virtual kernel memory layout:
     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
     DMA     : 0xffc00000 - 0xffe00000   (   2 MB)
-    vmalloc : 0xc8800000 - 0xfe000000   ( 856 MB)
-    lowmem  : 0xc0000000 - 0xc8000000   ( 128 MB)
+    vmalloc : 0xc4800000 - 0xfe000000   ( 920 MB)
+    lowmem  : 0xc0000000 - 0xc4000000   (  64 MB)
     modules : 0xbf000000 - 0xc0000000   (  16 MB)
       .init : 0xc0008000 - 0xc002b000   ( 140 kB)
       .text : 0xc002b000 - 0xc05a3000   (5600 kB)
@@ -66,9 +77,9 @@ cfg80211: Calling CRDA to update world regulatory domain
 Switching to clocksource timer1
 NET: Registered protocol family 2
 IP route cache hash table entries: 1024 (order: 0, 4096 bytes)
-TCP established hash table entries: 4096 (order: 3, 32768 bytes)
-TCP bind hash table entries: 4096 (order: 2, 16384 bytes)
-TCP: Hash tables configured (established 4096 bind 4096)
+TCP established hash table entries: 2048 (order: 2, 16384 bytes)
+TCP bind hash table entries: 2048 (order: 1, 8192 bytes)
+TCP: Hash tables configured (established 2048 bind 2048)
 TCP reno registered
 UDP hash table entries: 256 (order: 0, 4096 bytes)
 UDP-Lite hash table entries: 256 (order: 0, 4096 bytes)
@@ -84,7 +95,7 @@ Dquot-cache hash table entries: 1024 (order 0, 4096 bytes)
 JFFS2 version 2.2. (NAND) © 2001-2006 Red Hat, Inc.
 fuse init (API version 7.16)
 SGI XFS with security attributes, large block/inode numbers, no debug enabled
-msgmni has been set to 241
+msgmni has been set to 114
 Block layer SCSI generic (bsg) driver version 0.4 loaded (major 254)
 io scheduler noop registered
 io scheduler deadline registered (default)
@@ -117,7 +128,7 @@ ata1: SATA link down (SStatus 0 SControl 300)
 himii: probed
 ata2: SATA link down (SStatus 0 SControl 300)
 Invalid HW-MAC Address: 00:00:00:00:00:00
-Set Random MAC address: A2:A7:CA:A8:4D:71
+Set Random MAC address: DE:5E:9B:F8:10:B3
 usbmon: debugfs is not available
 ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
 hiusb-ehci hiusb-ehci.0: HIUSB EHCI
@@ -161,9 +172,11 @@ Registering the dns_resolver key type
 registered taskstats version 1
 VFS: Mounted root (jffs2 filesystem) on device 31:2.
 Freeing init memory: 140K
+usb 1-1: new high speed USB device number 2 using hiusb-ehci
 
             _ _ _ _ _ _ _ _ _ _ _ _
-            \  _  _   _  _ _ ___
+            \  _  _scsi2 : usb-storage 1-1:1.0
+   _  _ _ ___
             / /__/ \ |_/
            / __   /  -  _ ___
           / /  / /  / /
@@ -172,11 +185,27 @@ ___________\___\__________________
 
 [RCS]: /etc/init.d/S00devs
 [RCS]: /etc/init.d/S01udev
-Jan  1 00:00:02 udevd (529): /proc/529/oom_adj is deprecated, please use /proc/529/oom_score_adj instead.
-udevd[529]: main: error opening /dev/null: No such file or directory
+Jan  1 00:00:01 udevd (537): /proc/537/oom_adj is deprecated, please use /proc/537/oom_score_adj instead.
+udevd[537]: main: error opening /dev/null: No such file or directory
 [RCS]: /etc/init.d/S80network
+ADDRCONF(NETDEV_UP): eth0: link is not ready
+scsi 2:0:0:0: Direct-Access     JetFlash Transcend 16GB   1100 PQ: 0 ANSI: 4
+sd 2:0:0:0: [sda] 31703040 512-byte logical blocks: (16.2 GB/15.1 GiB)
+sd 2:0:0:0: Attached scsi generic sg0 type 0
+sd 2:0:0:0: [sda] Write Protect is off
+sd 2:0:0:0: [sda] No Caching mode page present
+sd 2:0:0:0: [sda] Assuming drive cache: write through
+sd 2:0:0:0: [sda] No Caching mode page present
+sd 2:0:0:0: [sda] Assuming drive cache: write through
+ sda: sda1
+sd 2:0:0:0: [sda] No Caching mode page present
+sd 2:0:0:0: [sda] Assuming drive cache: write through
+sd 2:0:0:0: [sda] Attached SCSI removable disk
+PHY: himii:03 - Link is Up - 100/Full
+ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+mount: RPC: Unable to receive; errno = Connection refused
 Auto login as root ...
-Jan  1 00:00:02 login[534]: root login on 'ttyS000'
+Jan  1 00:00:05 login[571]: root login on 'ttyS000'
 Welcome to HiLinux.
 None of nfsroot found in cmdline.
 #
@@ -196,9 +225,10 @@ Serial          : 0000000000000000
 
 
 
+
 ############################################################################################################################
 
-U-Boot 2010.06 (Jul 13 2019 - 09:10:52)
+U-Boot 2010.06 (Aug 03 2019 - 11:01:00)
 
 Check spi flash controller v350... Found
 Spi(cs1) ID: 0xC8 0x40 0x18 0xC8 0x40 0x18
@@ -206,24 +236,35 @@ Spi(cs1): Block:64KB Chip:16MB Name:"GD25Q128"
 In:    serial
 Out:   serial
 Err:   serial
+USB:   scanning bus for devices... 2 USB Device(s) found
+usb_stor_get_info->1422,blksz:512
+1 Storage Device(s) found
+Interface:  USB
+  Device 0: Vendor: JetFlash Rev: 1100 Prod: Transcend 16GB
+            Type: Removable Hard Disk
+            Capacity: 15480.0 MB = 15.1 GB (31703040 x 512)
+Partition 1: Filesystem: FAT32 "NO NAME    "
+reading u-boot.hi3520dv200
+reading kernel.hi3520dv200
+reading rootfs.hi3520dv200
 Hit any key to stop autoboot:  0
+hisilicon #
 hisilicon #
 hisilicon # pri
 bootdelay=1
 baudrate=115200
 ethaddr=00:00:23:34:45:66
-bootfile="uImage"
-bootargs=mem=128M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)
-chgbtpa=1
-serverip=192.168.3.47
-ipaddr=192.168.3.147
+ipaddr=192.168.1.10
+serverip=192.168.1.2
 netmask=255.255.254.0
-gatewayip=192.168.3.1
+bootfile="uImage"
+bootargs=mem=64M console=ttyAMA0,115200 root=/dev/mtdblock2 rootfstype=jffs2 mtdparts=hi_sfc:1M(boot),4M(kernel),11M(rootfs)
 bootcmd=sf probe 0;sf read 0x82000000 0x100000 0x400000;bootm 0x82000000
 stdin=serial
 stdout=serial
 stderr=serial
 verify=n
-ver=U-Boot 2010.06 (Jul 13 2019 - 09:10:52)
+ver=U-Boot 2010.06 (Aug 03 2019 - 11:01:00)
 
-Environment size: 462/262140 bytes
+Environment size: 427/262140 bytes
+

@@ -23,7 +23,7 @@
 ### 支持USB升级
 
 * file: u-boot/include/configs/hi3516a.h
-* 参考修改 : https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/modify/u-boot-2010.06/include/hi3520d.h
+* 参考修改 : https://github.com/lishaoliang/opendvr/tree/master/docs/cn/xm/modify/u-boot-2010.06/include/configs/hi3520d.h
 
 ```
 /* 支持自动升级 */
