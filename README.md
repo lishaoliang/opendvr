@@ -19,6 +19,7 @@ open DVR/NVR
 * [软件：Hi3520Dv200](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/Hi3520Dv200.md)
 * [编译好的环境](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/bin)
 * [实例log](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/bin/serial.log)
+* [u-boot修改](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/m-u-boot.md)
 
 
 # 为什么做此项目
