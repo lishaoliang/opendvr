@@ -20,3 +20,7 @@ open DVR/NVR
 * [编译好的环境](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/bin)
 * [实例log](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/bin/serial.log)
 * [u-boot修改](https://github.com/lishaoliang/opendvr/blob/master/docs/cn/xm/m-u-boot.md)
+
+# AD驱动
+* [nvp6114](http://bbs.ebaina.com/forum.php?mod=viewthread&tid=11072&extra=page%3D1)
+* [nvp6134](http://bbs.ebaina.com/forum.php?mod=viewthread&tid=52220&highlight=nvp6134)
