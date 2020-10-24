@@ -1,0 +1,4 @@
+0x00000000	gpio_i2c2_read	/home/pub/platform_h3/mpp/extdrv/hi3520D/gpio_i2c/gpioi2c	(unknown)
+0x00000000	gpio_i2c2_write	/home/pub/platform_h3/mpp/extdrv/hi3520D/gpio_i2c/gpioi2c	(unknown)
+0x00000000	gpio_i2c_read	/home/pub/platform_h3/mpp/extdrv/hi3520D/gpio_i2c/gpioi2c	(unknown)
+0x00000000	gpio_i2c_write	/home/pub/platform_h3/mpp/extdrv/hi3520D/gpio_i2c/gpioi2c	(unknown)

@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CF19FB3E-9E1A-4C80-B663-E1011867072B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>myprj</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\klb\inc;..\..\hi3520dv200\include;..\..\hi3520dv200\common;..\..\hi3520dv200\src;..\..\hi3520dv200\extdrv\nvp6114;..\..\hi3520dv200\extdrv\tw2865;..\..\hi3520dv200\extdrv\tw2868;..\..\hi3520dv200\extdrv\tw2960;..\..\hi3520dv200\extdrv\tlv320aic31;..\..\hi3520dv200\extdrv\cx26828;..\..\ahb7004t\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\klb\inc;..\..\hi3520dv200\include;..\..\hi3520dv200\common;..\..\hi3520dv200\src;..\..\hi3520dv200\extdrv\nvp6114;..\..\hi3520dv200\extdrv\tw2865;..\..\hi3520dv200\extdrv\tw2868;..\..\hi3520dv200\extdrv\tw2960;..\..\hi3520dv200\extdrv\tlv320aic31;..\..\hi3520dv200\extdrv\cx26828;..\..\ahb7004t\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\klb\inc;..\..\hi3520dv200\include;..\..\hi3520dv200\common;..\..\hi3520dv200\src;..\..\hi3520dv200\extdrv\nvp6114;..\..\hi3520dv200\extdrv\tw2865;..\..\hi3520dv200\extdrv\tw2868;..\..\hi3520dv200\extdrv\tw2960;..\..\hi3520dv200\extdrv\tlv320aic31;..\..\hi3520dv200\extdrv\cx26828;..\..\ahb7004t\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\klb\inc;..\..\hi3520dv200\include;..\..\hi3520dv200\common;..\..\hi3520dv200\src;..\..\hi3520dv200\extdrv\nvp6114;..\..\hi3520dv200\extdrv\tw2865;..\..\hi3520dv200\extdrv\tw2868;..\..\hi3520dv200\extdrv\tw2960;..\..\hi3520dv200\extdrv\tlv320aic31;..\..\hi3520dv200\extdrv\cx26828;..\..\ahb7004t\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\ahb7004t\Makefile" />
+    <None Include="..\..\hi3520dv200\Makefile.linux.param" />
+    <None Include="..\..\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\ahb7004t\src\ahb7004t_main.cpp" />
+    <ClCompile Include="..\..\ahb7004t\src\ahb7004t_mnp_dev.cpp" />
+    <ClCompile Include="..\..\ahb7004t\src\hi3520dv200_define.cpp" />
+    <ClCompile Include="..\..\hi3520dv200\common\loadbmp.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_audio.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_sys.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vda.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vdec.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_venc.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vi.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vo.c" />
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vpss.c" />
+    <ClCompile Include="..\..\hi3520dv200\sample\vdec\sample_vdec.c" />
+    <ClCompile Include="..\..\hi3520dv200\sample\venc\sample_venc.c" />
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_sys.cpp" />
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_vdec.cpp" />
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_venc.cpp" />
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_vi.cpp" />
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_vpss.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ahb7004t\src\ahb7004t_main.h" />
+    <ClInclude Include="..\..\ahb7004t\src\hi3520dv200_define.h" />
+    <ClInclude Include="..\..\hi3520dv200\common\loadbmp.h" />
+    <ClInclude Include="..\..\hi3520dv200\common\sample_comm.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hifb.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_common.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_adec.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_aenc.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_ai.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_aio.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_ao.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_hdmi.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_ive.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_pciv.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_rc.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_region.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_sys.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vb.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vda.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vdec.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_venc.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vi.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_video.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vo.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vpss.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_debug.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_defines.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_errno.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_io.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_jpeg_api.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_math.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_mem.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_tde_api.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_tde_errcode.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_tde_type.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\hi_type.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\jconfig.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\jerror.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\jmorecfg.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\jpeglib.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\list.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mkp\mod_ext.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_adec.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_aenc.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_ai.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_ao.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_hdmi.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_ive.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_pciv.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_region.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_sys.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vb.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vda.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vdec.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_venc.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vi.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vo.h" />
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vpss.h" />
+    <ClInclude Include="..\..\hi3520dv200\src\sample_hisi_inc.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

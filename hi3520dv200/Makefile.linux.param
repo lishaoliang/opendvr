@@ -1,0 +1,30 @@
+# 
+# 定义HISI SDK编译器环境参数
+#
+# 输入变量
+#	HISI_SDK_PATH : 库目录, eg. "./hi3520dv200"
+#
+# 输出变量
+#	HISI_INC : 引用硬件平台的头文件
+#	HISI_LIBS : 引用硬件平台的库文件
+
+# 引用库
+HISI_mpi_libs := -lmpi -lVoiceEngine -laec -lresampler -lanr -lvqev2 -ljpeg -lhdmi -ltde
+
+HISI_hi3520dv200_libs := $(HISI_mpi_libs)
+
+
+# 导出变量
+HISI_INC := -I $(HISI_SDK_PATH)/include
+HISI_INC += -I $(HISI_SDK_PATH)/common
+HISI_INC += -I $(HISI_SDK_PATH)/src
+
+HISI_INC += -I $(HISI_SDK_PATH)/extdrv/cx26828
+HISI_INC += -I $(HISI_SDK_PATH)/extdrv/nvp6114
+HISI_INC += -I $(HISI_SDK_PATH)/extdrv/tlv320aic31
+HISI_INC += -I $(HISI_SDK_PATH)/extdrv/tw2865
+HISI_INC += -I $(HISI_SDK_PATH)/extdrv/tw2868
+HISI_INC += -I $(HISI_SDK_PATH)/extdrv/tw2960
+
+
+HISI_LIBS := -L $(HISI_SDK_PATH)/lib -Bstatic $(HISI_hi3520dv200_libs)

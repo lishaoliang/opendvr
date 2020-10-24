@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ahb7004t">
+      <UniqueIdentifier>{80acc28a-db04-4cc0-8fe1-df74e9f12557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200">
+      <UniqueIdentifier>{09028d91-a62d-4400-b687-8be32e9804d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ahb7004t\src">
+      <UniqueIdentifier>{789cb9e9-1446-4965-83c2-218300128ad7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\common">
+      <UniqueIdentifier>{e4a6c9c5-0014-4f6f-a219-f67f0530c488}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\include">
+      <UniqueIdentifier>{c1801f03-389b-45a1-8793-ad5852ee38bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\src">
+      <UniqueIdentifier>{f7a979e3-7fc0-4b0a-8ad6-6d38c960873a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\include\mkp">
+      <UniqueIdentifier>{8f2e1b29-13a0-4b24-9e00-19b67c18617e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\sample">
+      <UniqueIdentifier>{c759f8d3-1b84-4cc2-bbd9-ebb3fd77eec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\sample\venc">
+      <UniqueIdentifier>{d601202e-6e88-4d67-a1a5-fae65d42095c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3520dv200\sample\vdec">
+      <UniqueIdentifier>{78663619-8740-4ec4-b97c-7f0a894d8eeb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Makefile" />
+    <None Include="..\..\ahb7004t\Makefile">
+      <Filter>ahb7004t</Filter>
+    </None>
+    <None Include="..\..\hi3520dv200\Makefile.linux.param">
+      <Filter>hi3520dv200</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\hi3520dv200\common\loadbmp.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_audio.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_sys.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vda.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vdec.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_venc.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vi.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vo.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\common\sample_comm_vpss.c">
+      <Filter>hi3520dv200\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\sample\venc\sample_venc.c">
+      <Filter>hi3520dv200\sample\venc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\sample\vdec\sample_vdec.c">
+      <Filter>hi3520dv200\sample\vdec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_sys.cpp">
+      <Filter>hi3520dv200\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ahb7004t\src\ahb7004t_main.cpp">
+      <Filter>ahb7004t\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ahb7004t\src\ahb7004t_mnp_dev.cpp">
+      <Filter>ahb7004t\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ahb7004t\src\hi3520dv200_define.cpp">
+      <Filter>ahb7004t\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_vdec.cpp">
+      <Filter>hi3520dv200\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_venc.cpp">
+      <Filter>hi3520dv200\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_vi.cpp">
+      <Filter>hi3520dv200\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3520dv200\src\sample_hisi_vpss.cpp">
+      <Filter>hi3520dv200\src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ahb7004t\src\ahb7004t_main.h">
+      <Filter>ahb7004t\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ahb7004t\src\hi3520dv200_define.h">
+      <Filter>ahb7004t\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\common\loadbmp.h">
+      <Filter>hi3520dv200\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\common\sample_comm.h">
+      <Filter>hi3520dv200\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_adec.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_aenc.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_ai.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_aio.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_ao.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_hdmi.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_ive.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_pciv.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_rc.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_region.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_sys.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vb.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vda.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vdec.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_venc.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vi.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_video.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vo.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_comm_vpss.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_common.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_debug.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_defines.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_errno.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_io.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_jpeg_api.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_math.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_mem.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_tde_api.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_tde_errcode.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_tde_type.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hi_type.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\hifb.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\jconfig.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\jerror.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\jmorecfg.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\jpeglib.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\list.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_adec.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_aenc.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_ai.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_ao.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_hdmi.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_ive.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_pciv.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_region.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_sys.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vb.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vda.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vdec.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_venc.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vi.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vo.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mpi_vpss.h">
+      <Filter>hi3520dv200\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\include\mkp\mod_ext.h">
+      <Filter>hi3520dv200\include\mkp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3520dv200\src\sample_hisi_inc.h">
+      <Filter>hi3520dv200\src</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
