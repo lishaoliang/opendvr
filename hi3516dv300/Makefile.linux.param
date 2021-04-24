@@ -1,0 +1,35 @@
+# 
+# 定义HISI SDK编译器环境参数
+#
+# 输入变量
+#	HISI_SDK_PATH : 库目录, eg. "./hi3516ev200"
+#
+# 输出变量
+#	HISI_INC : 引用硬件平台的头文件
+#	HISI_LIBS : 引用硬件平台的库文件
+
+# 引用库
+
+HISI_mpi_libs := -l_hiae -lisp -l_hidehaze -l_hidrc -l_hildci -l_hicalcflicker -l_hiawb
+HISI_mpi_libs += -lsns_imx327 -lsns_imx307 -lsns_imx307_2l -lsns_imx327_2l -lsns_imx335
+HISI_mpi_libs += -lsns_imx458 -lsns_mn34220 -lsns_os05a -lsns_os08a10 -lsns_sc4210 
+HISI_mpi_libs += -lsns_gc2053 -lsns_os05a -lsns_ov12870 -lsns_os04b10 -lsns_imx415
+HISI_mpi_libs += -l_hiir_auto -ltde -lmpi -lVoiceEngine -lupvqe -ldnvqe
+HISI_mpi_libs += -lsecurec -lhdmi -lsvpruntime -live
+
+HISI_hi3516dv300_libs := $(HISI_mpi_libs)
+
+
+# 导出变量
+HISI_INC := -I $(HISI_SDK_PATH)/include
+HISI_INC += -I $(HISI_SDK_PATH)/common
+HISI_INC += -I $(HISI_SDK_PATH)/src
+
+
+# 海思自身的静态库
+HISI_LIBS := -L $(HISI_SDK_PATH)/lib -Bstatic $(HISI_hi3516dv300_libs)
+
+
+# 第三方通过海思平台编译的库
+HISI_LIBS += -L $(HISI_SDK_PATH)/lib_third -Bstatic
+HISI_LIBS += -lssl -lcrypto

@@ -3,14 +3,25 @@
 SHELL = /bin/bash
 PWD = `pwd`
 
+# 编译目标: "dopi3516dv3", "dopi16ev2", "ahb7004t"
+target ?= dopi3516dv3
 
-OS ?= linux
-ARCH ?= arm
-TAGS ?= debug normal hi3520dv200
-
-MY_TOOL_CHAIN ?= arm-hisiv300-linux-
-#MY_TOOL_CHAIN ?= arm-linux-gnueabi-
-#MY_TOOL_CHAIN ?= arm-hisiv100nptl-linux-
+ifeq ($(target), dopi3516dv3)
+	OS := linux
+	ARCH := arm
+	TAGS := debug normal hi3516dv300
+	MY_TOOL_CHAIN := arm-himix200-linux-
+else ifeq ($(target), dopi16ev2)
+	OS := linux
+	ARCH := arm
+	TAGS := debug normal hi3516ev200
+	MY_TOOL_CHAIN := arm-himix100-linux-
+else ifeq ($(target), ahb7004t)
+	OS := linux
+	ARCH := arm
+	TAGS := debug normal hi3520dv200
+	MY_TOOL_CHAIN := arm-hisiv300-linux-
+endif
 
 
 # "linux", "windows", "darwin", "stm32", "js"
@@ -45,9 +56,21 @@ CP		:= -cp
 CP_F	:= -cp -f
 CP_RF	:= -cp -rf
 
+
 # 海思静态库; HISI_SDK_PATH(in), HISI_LIBS(out), HISI_INC(out)
-HISI_SDK_PATH := $(PWD)/hi3520dv200
--include ./hi3520dv200/Makefile.linux.param
+ifeq ($(target), dopi3516dv3)
+	HISI_SDK_PATH := $(PWD)/hi3516dv300
+	-include ./hi3516dv300/Makefile.linux.param
+	MY_MNP_DEV_LIB := -lmnp_dev_dopi_3516dv3
+else ifeq ($(target), dopi16ev2)
+	HISI_SDK_PATH := $(PWD)/hi3516ev200
+	-include ./hi3516ev200/Makefile.linux.param
+	MY_MNP_DEV_LIB := -lmnp_dev_dop16ev2
+else ifeq ($(target), ahb7004t)
+	HISI_SDK_PATH := $(PWD)/hi3520dv200
+	-include ./hi3520dv200/Makefile.linux.param
+	MY_MNP_DEV_LIB := -lmnp_dev_ahb7004t
+endif
 
 
 # 编译目标
@@ -57,14 +80,14 @@ MY_TARGET_EXE := ./build/$(MY_TARGET_NAME)
 
 # cgo 部分引用的C头文件目录
 MY_CGO_CFLAGS := "
-MY_CGO_CFLAGS += -I $(PWD)/klb/inc
+MY_CGO_CFLAGS += -I $(PWD)/../klb/inc -I $(PWD)/../klb/src_c/klua/lua-5.4.1/src
 MY_CGO_CFLAGS += "
 
 # cgo 部分需要链接的库, -Xlinker 库直接有交叉引用函数
 MY_CGO_LDFLAGS := "
-MY_CGO_LDFLAGS += -L $(PWD)/klb/lib -lklb_c
-MY_CGO_LDFLAGS += -L $(PWD)/lib -lmnp_dev_ahb7004t
-MY_CGO_LDFLAGS += -Xlinker -lklb_c -lmnp_dev_ahb7004t -Xlinker
+MY_CGO_LDFLAGS += -L $(PWD)/../klb/lib -lklb_c
+MY_CGO_LDFLAGS += -L $(PWD)/lib $(MY_MNP_DEV_LIB)
+MY_CGO_LDFLAGS += -Xlinker -lklb_c $(MY_MNP_DEV_LIB) -Xlinker
 MY_CGO_LDFLAGS += $(HISI_LIBS)
 MY_CGO_LDFLAGS += -lstdc++
 MY_CGO_LDFLAGS += -lpthread -lrt -ldl -lm
@@ -91,12 +114,26 @@ $(MY_TARGET_EXE): depends
 	${MY_CGO} go build $(MY_GO_TAGS) $(MY_CGO_STATIC) -o $@ $(MY_GO_MAIN)
 
 depends:
-	if [ -f ./klb/src_c/Makefile ]; then $(MAKE) $(MK_PARAMS) -C ./klb/src_c; fi
+	if [ -f ../klb/src_c/Makefile ]; then $(MAKE) $(MK_PARAMS) -C ../klb/src_c; fi
+
+ifeq ($(target), dopi3516dv3)
+	if [ -f ./dopi_3516dv300/Makefile ]; then $(MAKE) $(MK_PARAMS) -C ./dopi_3516dv300; fi
+else ifeq ($(target), dopi16ev2)
+	if [ -f ./dopi16ev2/Makefile ]; then $(MAKE) $(MK_PARAMS) -C ./dopi16ev2; fi
+else ifeq ($(target), ahb7004t)
 	if [ -f ./ahb7004t/Makefile ]; then $(MAKE) $(MK_PARAMS) -C ./ahb7004t; fi
+endif
 
 clean:
-	if [ -f ./klb/src_c/Makefile ]; then $(MAKE) -C ./klb/src_c clean; fi
+	if [ -f ../klb/src_c/Makefile ]; then $(MAKE) -C ../klb/src_c clean; fi
+
+ifeq ($(target), dopi3516dv3)
+	if [ -f ./dopi_3516dv300/Makefile ]; then $(MAKE) $(MK_PARAMS) -C ./dopi_3516dv300 clean; fi
+else ifeq ($(target), dopi16ev2)
+	if [ -f ./dopi16ev2/Makefile ]; then $(MAKE) -C ./dopi16ev2 clean; fi
+else ifeq ($(target), ahb7004t)
 	if [ -f ./ahb7004t/Makefile ]; then $(MAKE) -C ./ahb7004t clean; fi
+endif
 
 	@echo "++++++ make clean ++++++"
 	@echo "+ PWD = $(PWD)"
@@ -112,15 +149,15 @@ upx:
 	./upx $(MY_TARGET_EXE)
 
 cp:
-	$(CP_RF) ./klb/lib/base ./build/
-	$(CP_RF) ./klb/lib/html ./build/
-	$(CP_RF) ./klb/lib/http ./build/
-	$(CP_RF) ./klb/lib/rtsp ./build/
-	$(CP_RF) ./klb/lib/server ./build/
-	$(CP_RF) ./klb/lib/tls ./build/
-	$(CP_RF) ./klb/lib/util ./build/
-	$(CP_F)  ./klb/lib/conf.lua ./build/
-	$(CP_F)  ./klb/lib/server.lua ./build/
+	$(CP_RF) ../klb/lib/base ./build/
+	$(CP_RF) ../klb/lib/html ./build/
+	$(CP_RF) ../klb/lib/http ./build/
+	$(CP_RF) ../klb/lib/rtsp ./build/
+	$(CP_RF) ../klb/lib/server ./build/
+	$(CP_RF) ../klb/lib/tls ./build/
+	$(CP_RF) ../klb/lib/util ./build/
+	$(CP_F)  ../klb/lib/conf.lua ./build/
+	$(CP_F)  ../klb/lib/server.lua ./build/
 
 define my_tip
 	@echo "++++++ make tip ++++++"

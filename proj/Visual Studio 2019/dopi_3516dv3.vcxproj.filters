@@ -1,0 +1,459 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hi3516dv300">
+      <UniqueIdentifier>{03d38cc6-1199-4eb9-84e6-fc6e0c171889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3516dv300\common">
+      <UniqueIdentifier>{8ec854fa-1d34-474c-bc23-1f25a31c2042}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3516dv300\include">
+      <UniqueIdentifier>{9c03629e-1c19-4176-b71f-881d91b3a764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3516dv300\sample">
+      <UniqueIdentifier>{124f9c4d-8659-48d0-a583-2a38651b5ff6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3516dv300\sample\venc">
+      <UniqueIdentifier>{047d3836-0dd2-4a81-bc0e-761823e81a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3516dv300\src">
+      <UniqueIdentifier>{cf58832f-ab22-46ee-87c4-a811034c90cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dopi_3516dv3">
+      <UniqueIdentifier>{5d487448-500d-4ec7-ae43-bc94e36cffc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="dopi_3516dv3\src">
+      <UniqueIdentifier>{75af7180-00e8-4f18-8d69-2f3885649545}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hi3516dv300\include\adapt">
+      <UniqueIdentifier>{6ae12abb-1259-4884-8843-baec1ae5441c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Makefile" />
+    <None Include="..\..\dopi_3516dv300\Makefile">
+      <Filter>dopi_3516dv3</Filter>
+    </None>
+    <None Include="..\..\hi3516dv300\Makefile.linux.param">
+      <Filter>hi3516dv300</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\hi3516dv300\common\loadbmp.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_audio.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_isp.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_region.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_sys.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vdec.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_venc.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vi.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vo.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vpss.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dopi_3516dv300\src\dopi_3516dv3_main.c">
+      <Filter>dopi_3516dv3\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dopi_3516dv300\src\dopi_3516dv3_mnp_dev.c">
+      <Filter>dopi_3516dv3\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\dopi_3516dv300\src\hi3516dv300_define.c">
+      <Filter>dopi_3516dv3\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_isp.c">
+      <Filter>hi3516dv300\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_sys.c">
+      <Filter>hi3516dv300\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_venc.c">
+      <Filter>hi3516dv300\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_venc_proc.c">
+      <Filter>hi3516dv300\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_vi.c">
+      <Filter>hi3516dv300\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_vpss.c">
+      <Filter>hi3516dv300\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\sample\venc\sample_venc.c">
+      <Filter>hi3516dv300\sample\venc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\audio_aac_adp.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\audio_dl_adp.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\hi3516dv300\common\audio_mp3_adp.c">
+      <Filter>hi3516dv300\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\hi3516dv300\common\loadbmp.h">
+      <Filter>hi3516dv300\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\common\sample_comm.h">
+      <Filter>hi3516dv300\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\aacdec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\aacenc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\acodec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\autoconf.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\fisheye_calibrate.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_ae_comm.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_af_comm.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_awb_comm.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_buffer.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_3a.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_adec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_aenc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_ai.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_aio.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_ao.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_dis.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_gdc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_hdmi.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_isp.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_ive.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_rc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_region.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_snap.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_sns.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_svp.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_sys.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vb.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vdec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_venc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vgs.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vi.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_video.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vo.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vpss.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_common.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_common_cipher.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_debug.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_defines.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_errno.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_i2c.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_isp_bin.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_isp_debug.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_isp_defines.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_ive.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_math.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_md.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_mipi.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_mipi_tx.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_nnie.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_osal.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_osal_user.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_plugin.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_resampler_api.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_runtime_api.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_runtime_comm.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_securec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_sns_ctrl.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_spi.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_ssp.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_tde_api.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_tde_errcode.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_tde_type.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_type.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_types.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hi_unf_cipher.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hifb.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\hiir.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\ivs_md.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\list.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_ae.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_audio.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_awb.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_gdc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_hdmi.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_isp.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_ive.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_nnie.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_region.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_snap.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_sys.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vb.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vdec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_venc.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vgs.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vi.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vo.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vpss.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\osal_ioctl.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\osal_list.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\osal_mmz.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\securec.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\securectype.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\vdec_exp.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\vou_exp.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\watchdog.h">
+      <Filter>hi3516dv300\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_3a_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_isp_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_sns_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_video_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_common_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_debug_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_errno_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_isp_bin_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_math_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_sns_ctrl_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\mpi_isp_adapt.h">
+      <Filter>hi3516dv300\include\adapt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\src\hi3516dv300_inc.h">
+      <Filter>hi3516dv300\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dopi_3516dv300\src\dopi_3516dv3_main.h">
+      <Filter>dopi_3516dv3\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\dopi_3516dv300\src\hi3516dv300_define.h">
+      <Filter>dopi_3516dv3\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\common\audio_aac_adp.h">
+      <Filter>hi3516dv300\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\common\audio_dl_adp.h">
+      <Filter>hi3516dv300\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\common\audio_mp3_adp.h">
+      <Filter>hi3516dv300\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\hi3516dv300\common\mp3dec.h">
+      <Filter>hi3516dv300\common</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

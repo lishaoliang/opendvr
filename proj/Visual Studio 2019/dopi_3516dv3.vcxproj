@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\dopi_3516dv300\Makefile" />
+    <None Include="..\..\hi3516dv300\Makefile.linux.param" />
+    <None Include="..\..\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\dopi_3516dv300\src\dopi_3516dv3_main.c" />
+    <ClCompile Include="..\..\dopi_3516dv300\src\dopi_3516dv3_mnp_dev.c" />
+    <ClCompile Include="..\..\dopi_3516dv300\src\hi3516dv300_define.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\audio_aac_adp.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\audio_dl_adp.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\audio_mp3_adp.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\loadbmp.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_audio.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_isp.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_region.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_sys.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vdec.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_venc.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vi.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vo.c" />
+    <ClCompile Include="..\..\hi3516dv300\common\sample_comm_vpss.c" />
+    <ClCompile Include="..\..\hi3516dv300\sample\venc\sample_venc.c" />
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_isp.c" />
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_sys.c" />
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_venc.c" />
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_venc_proc.c" />
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_vi.c" />
+    <ClCompile Include="..\..\hi3516dv300\src\hisample_vpss.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\dopi_3516dv300\src\dopi_3516dv3_main.h" />
+    <ClInclude Include="..\..\dopi_3516dv300\src\hi3516dv300_define.h" />
+    <ClInclude Include="..\..\hi3516dv300\common\audio_aac_adp.h" />
+    <ClInclude Include="..\..\hi3516dv300\common\audio_dl_adp.h" />
+    <ClInclude Include="..\..\hi3516dv300\common\audio_mp3_adp.h" />
+    <ClInclude Include="..\..\hi3516dv300\common\loadbmp.h" />
+    <ClInclude Include="..\..\hi3516dv300\common\mp3dec.h" />
+    <ClInclude Include="..\..\hi3516dv300\common\sample_comm.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\aacdec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\aacenc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\acodec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_common_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_3a_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_isp_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_sns_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_comm_video_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_debug_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_errno_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_isp_bin_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_math_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\hi_sns_ctrl_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\adapt\mpi_isp_adapt.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\autoconf.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\fisheye_calibrate.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hifb.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hiir.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_ae_comm.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_af_comm.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_awb_comm.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_buffer.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_common.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_common_cipher.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_3a.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_adec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_aenc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_ai.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_aio.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_ao.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_dis.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_gdc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_hdmi.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_isp.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_ive.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_rc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_region.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_snap.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_sns.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_svp.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_sys.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vb.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vdec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_venc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vgs.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vi.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_video.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vo.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_comm_vpss.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_debug.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_defines.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_errno.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_i2c.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_isp_bin.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_isp_debug.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_isp_defines.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_ive.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_math.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_md.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_mipi.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_mipi_tx.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_nnie.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_osal.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_osal_user.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_plugin.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_resampler_api.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_runtime_api.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_runtime_comm.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_securec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_sns_ctrl.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_spi.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_ssp.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_tde_api.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_tde_errcode.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_tde_type.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_type.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_types.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\hi_unf_cipher.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\ivs_md.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\list.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_ae.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_audio.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_awb.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_gdc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_hdmi.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_isp.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_ive.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_nnie.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_region.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_snap.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_sys.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vb.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vdec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_venc.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vgs.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vi.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vo.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\mpi_vpss.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\osal_ioctl.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\osal_list.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\osal_mmz.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\securec.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\securectype.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\vdec_exp.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\vou_exp.h" />
+    <ClInclude Include="..\..\hi3516dv300\include\watchdog.h" />
+    <ClInclude Include="..\..\hi3516dv300\src\hi3516dv300_inc.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{8F33AC42-7954-421D-8693-1984BBBACEFF}</ProjectGuid>
+    <RootNamespace>opendvr</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IntDir>$(ProjectName)_$(Configuration)\</IntDir>
+    <OutDir>..\..\lib</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\hi3516dv300\include;..\..\hi3516dv300\common;..\..\hi3516dv300\src;..\..\dopi_3516dv300\src;..\..\..\klb\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\hi3516dv300\include;..\..\hi3516dv300\common;..\..\hi3516dv300\src;..\..\dopi_3516dv300\src;..\..\..\klb\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\hi3516dv300\include;..\..\hi3516dv300\common;..\..\hi3516dv300\src;..\..\dopi_3516dv300\src;..\..\..\klb\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>..\..\hi3516dv300\include;..\..\hi3516dv300\common;..\..\hi3516dv300\src;..\..\dopi_3516dv300\src;..\..\..\klb\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
